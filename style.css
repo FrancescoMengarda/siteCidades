@@ -50,7 +50,7 @@ body {
 /* Ajusta o estilo dos slides */
 .gallery {
     background: transparent;
-    height:960px;
+    height:884px;
 }
 
 .gallery-cell {
@@ -182,7 +182,7 @@ body {
     flex-wrap: nowrap;
     height: 500px;
     width: 100%;
-    top: 2747px;
+    top: 2673px;
     left: 0px;
     background: rgb(249,79,201);
     background: linear-gradient(264deg, rgba(249,79,201,1) 0%, rgba(253,110,255,1) 47%, rgba(137,32,255,1) 100%);
@@ -253,4 +253,10 @@ body {
     background-color: #0d235aa1;
     box-shadow: 10px 10px 0px#05F2C7;
     font-size: 30px;
+}
+
+.voltar{
+    margin-top: 300px;
+    text-decoration: none;
+    color: black;
 }
