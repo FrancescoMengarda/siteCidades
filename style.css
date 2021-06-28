@@ -1,0 +1,256 @@
+@font-face {
+    font-family: 'LAS_Speedwagon';
+    src: url('Speedwagon3D-lmxX.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Celeste_font';
+    src: url('Renogare-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+/* Faz o título ficar bonitinho */
+.titulo {
+    font-family: "LAS_Speedwagon";
+    font-size: 6em;   
+    background: -webkit-linear-gradient(280deg, rgba(249,79,201,1) 53%, rgba(255,254,115,1) 90%); /* Cria o gradiente do background */
+    -webkit-background-clip: text; /* Cria uma máscara com base no texto */
+    background-clip: text;
+    -webkit-text-fill-color: transparent; /* Faz o texto ficar transparente*/
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+    position: relative;
+    padding: 0px;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+  
+body { 
+    font-family: 'Celeste_Font'; 
+    background-image: url('Fundo.jpg');
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+/* Ajusta o estilo dos slides */
+.gallery {
+    background: transparent;
+    height:960px;
+}
+
+.gallery-cell {
+    width: 66%;
+    height: 90%;
+    top:40px;
+    margin-right: 1em;
+    background:green;
+    border: 1em solid white;
+    box-shadow: 10px 10px 0px#05F2C7;
+}
+
+/* Descrição das cidades com a foto circular ao lado */
+
+.cidade1_img, .cidade2_img, .cidade3_img, .cidade4_img, .cidade5_img{
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 12.5em;
+    height: 12.5em;
+    margin: 9px;
+}
+
+/* Cidades onde o texto tem que ficar à direita */
+.cidade1, .cidade3, .cidade5{
+    position: relative;
+    margin-top: 2em;
+    top: 5em;
+    display: flex;
+    width:66%;
+    left:17%;
+    
+    /* background-color: green; */
+}
+
+.cidade1, .cidade2, .cidade3, .cidade4, .cidade5{
+    border: .75em solid white;
+    background-color: #0D235A;
+    box-shadow: 10px 10px 0px#05F2C7;
+}
+
+/* Cidades onde o texto tem que ficar à esquerda */
+.cidade2, .cidade4{
+    position: relative;
+    margin-top: 2em;
+    top: 5em;
+    display: flex;
+    flex-direction: row-reverse;
+    width:66%;
+    left: 17%;
+
+    /* background-color: yellow; */
+}
+
+/* Faz o texto ficar alinhado com a margem inferior */
+.descricaoTexto{
+    position: relative;
+    bottom: 0px;
+    display: flex;
+    z-index: 3;
+    /* background-color: blue; */
+}
+
+/* Faz o título aparecer em cima do texto */
+.descricao{
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+
+    /* background-color: crimson; */
+}
+
+/* Faz os títulos que precisam ficar a esquerda ficarem */
+.tituloEsquerda{
+    position: relative;
+    text-align: end;
+
+    /* background-color: chocolate; */
+}
+
+/*  Ajusta os textos das cidades */
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+}
+
+/* Parte geral onde está a  */
+.corpo{
+    background:linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+    height: 1600px;
+    margin-right: 0%;
+    width: 100%;
+    color:#ede2ca;
+}
+/* Faz o efeito CRT */
+.corpo::before{
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    z-index: 2;
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+}
+
+/* Linhazinha divisória das divs */
+.linha{
+    width:100%;
+    margin: 0px;
+    height: 3em;
+    background: #05F2C7;
+    z-index: 3;
+    color:white;
+}
+
+
+/* Lugar onde vai estar os  */
+.CidadesHover{
+    position: absolute;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 500px;
+    width: 100%;
+    top: 2747px;
+    left: 0px;
+    background: rgb(249,79,201);
+    background: linear-gradient(264deg, rgba(249,79,201,1) 0%, rgba(253,110,255,1) 47%, rgba(137,32,255,1) 100%);
+}
+/* Faz o efeito CRT */
+.CidadesHover::before{
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    z-index: 2;
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+}
+
+.Itens1, .Itens2, .Itens3, .Itens4, .Itens5{
+    height: 300px;
+    width: 10%; 
+    background: gray;
+    margin-left: 7.5%;
+    margin-top: 2em;
+    border: .75em solid white;
+    box-shadow: 10px 10px 0px#05F2C7;
+    
+}
+.Itens1:hover{
+    transform: translate(-10px);
+    box-shadow: 20px 20px 0px#05F2C7;
+    transition-duration: 200ms;
+}
+.Itens2:hover{
+    transform: translate(-10px);
+    box-shadow: 20px 20px 0px#05F2C7;
+    transition-duration: 200ms;
+}
+.Itens3:hover{
+    transform: translate(-10px);
+    box-shadow: 20px 20px 0px#05F2C7;
+    transition-duration: 200ms;
+}
+.Itens4:hover{
+    transform: translate(-10px);
+    box-shadow: 20px 20px 0px#05F2C7;
+    transition-duration: 200ms;
+}
+.Itens5:hover{
+    transform: translate(-10px);
+    box-shadow: 20px 20px 0px#05F2C7;
+    transition-duration: 200ms;
+}
+
+.tituloLinha{
+    position:relative;
+    top:-20px;
+}
+
+.itens{
+    position: absolute;
+    width: 70%;
+    height: 800px;
+    left: 15%;
+    top:10%;
+    border: 10px solid white;
+    background-color: #0d235aa1;
+    box-shadow: 10px 10px 0px#05F2C7;
+    font-size: 30px;
+}
