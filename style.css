@@ -174,15 +174,14 @@ body {
     color:white;
 }
 
-
 /* Lugar onde vai estar os  */
 .CidadesHover{
     position: absolute;
     display: flex;
     flex-wrap: nowrap;
-    height: 500px;
+    height: 510px;
     width: 100%;
-    top: 2673px;
+    top: 2672px;
     left: 0px;
     background: rgb(249,79,201);
     background: linear-gradient(264deg, rgba(249,79,201,1) 0%, rgba(253,110,255,1) 47%, rgba(137,32,255,1) 100%);
@@ -259,4 +258,22 @@ body {
     margin-top: 300px;
     text-decoration: none;
     color: black;
+}
+
+.imagemItem{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin-top: 200px;
+    margin-left: 1200px;
+    border: 10px solid wheat;
+    box-shadow: 10px 10px 0px#05F2C7;
+    background:white;
+}
+
+.iconeGIT{
+    margin-top: 450px;
+    margin-left: 170px;
+    height: 50px;
+    width: 50px;
 }
